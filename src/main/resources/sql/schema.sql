@@ -8,8 +8,7 @@ create table if not exists `db_config`  (
   `password` varchar(255) COMMENT '密码',
   `schema` varchar(255),
   `catalog` varchar(255),
-  `db_type` varchar(255),
-  PRIMARY KEY (`id`)
+  `db_type` varchar(255)
 ) engine=innodb default charset=utf8;
 
 -- drop table if exists `table_strategy_config`;
@@ -30,7 +29,6 @@ create table if not exists `table_strategy_config`  (
   `service_package` varchar(255),
   `service_impl_package` varchar(255),
   `mapper_package` varchar(255),
-  `controller_package` varchar(255),
-  PRIMARY KEY (`id`)
+  `controller_package` varchar(255)
 )  engine=innodb default charset=utf8;
 
